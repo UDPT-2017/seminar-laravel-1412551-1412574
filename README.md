@@ -1,10 +1,10 @@
-# Seminar-UDPT - *Tên đề tài*
+﻿# Seminar-UDPT - *Laravel 5.4*
 
 **Tên đề tài** là một repository trong đề tài tìm hiểu của lớp Ứng dụng phân tán.
 
 Thành viên:
-* [ ] **MSSV1** Tên sinh viên 1 (tên tài khoản github)
-* [ ] **MSSV2** Tên sinh viên 2 (tên tài khoản github)
+* [ ] **1412551** Nguyễn Đang Tích (ndtich)
+* [ ] **1412574** Đặng Văn Trí (VanTri250596)
 
 URL: **Link github page**
 
@@ -13,9 +13,9 @@ URL: **Link github page**
 Sinh viên check vào các mục bên dưới và ghi mã sinh viên đã làm vào chức năng theo mẫu. Mục nào ko có MSSV là tính điểm theo nhóm. Cần sắp xếp các chức năng bên dưới theo thứ tự MSSV đã thực hiện.
 
 Yêu cầu **GIT**
-* [ ] Có sử dụng GIT.
+* [x] Có sử dụng GIT.
 * [ ] Sử dụng GIT theo Centralized Workflow.
-* [ ] Sử dụng GIT theo Feature Branch Workflow.
+* [x] Sử dụng GIT theo Feature Branch Workflow.
 * [ ] Sử dụng GIT theo Gitflow Workflow.
 
 Yêu cầu **bắt buộc**
@@ -24,8 +24,16 @@ Yêu cầu **bắt buộc**
 * [ ] Tạo github page để viết lại báo cáo cho nội dung đề tài tìm hiểu
 
 Các **nội dung lý thuyết** dự định tìm hiểu. Nhóm liệt kê các nội dung đã làm được vào bên dưới và check vào các nội dung đã tìm hiểu được.
-* [ ] Nội dung 1
-* [ ] Nội dung 2
+* [x] Route
+* [x] Controller và truyền dữ liệu cho Controller
+* [x] View và truyền dữ liệu trên View
+* [x] Mô hình MVC trong Laravel
+* [x] Blade Template
+* [x] Pagination
+* [x] Truy vấn dữ liệu với Query Builder
+* [x] Model và truy vấn dữ liệu với Model
+* [x] Middleware
+* [x] Auth
 
 Các **chức năng của demo** đã thực hiện hoặc dự kiến thực hiện. Nhóm check vào các chức năng đã làm
 * [ ] Chức năng 1
