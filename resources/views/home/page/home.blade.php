@@ -88,9 +88,7 @@
                                         @endif
                                     </div>
                                     <div class="buttons">
-                                        <a class="btn btn-theme btn-theme-transparent btn-wish-list" href="#"><i class="fa fa-heart"></i></a><!--
-                                        --><a class="btn btn-theme btn-theme-transparent btn-icon-left" href="#"><i class="fa fa-shopping-cart"></i>Thêm vào giỏ</a><!--
-                                        --><a class="btn btn-theme btn-theme-transparent btn-compare" href="#"><i class="fa fa-exchange"></i></a>
+                                        <a class="btn btn-theme btn-theme-transparent btn-icon-left" href="addcart/{{$sp->id}}"><i class="fa fa-shopping-cart"></i>Thêm vào giỏ</a>
                                     </div>
                                 </div>
                             </div>
@@ -120,9 +118,7 @@
                                         @endif
                                     </div>
                                     <div class="buttons">
-                                        <a class="btn btn-theme btn-theme-transparent btn-wish-list" href="#"><i class="fa fa-heart"></i></a><!--
-                                        --><a class="btn btn-theme btn-theme-transparent btn-icon-left" href="#"><i class="fa fa-shopping-cart"></i>Thêm vào giỏ</a><!--
-                                        --><a class="btn btn-theme btn-theme-transparent btn-compare" href="#"><i class="fa fa-exchange"></i></a>
+                                        <a class="btn btn-theme btn-theme-transparent btn-icon-left" href="addcart/{{$sp->id}}"><i class="fa fa-shopping-cart"></i>Thêm vào giỏ</a>
                                     </div>
                                 </div>
                             </div>
@@ -152,9 +148,7 @@
                                         @endif
                                     </div>
                                     <div class="buttons">
-                                        <a class="btn btn-theme btn-theme-transparent btn-wish-list" href="#"><i class="fa fa-heart"></i></a><!--
-                                        --><a class="btn btn-theme btn-theme-transparent btn-icon-left" href="#"><i class="fa fa-shopping-cart"></i>Thêm vào giỏ</a><!--
-                                        --><a class="btn btn-theme btn-theme-transparent btn-compare" href="#"><i class="fa fa-exchange"></i></a>
+                                        <a class="btn btn-theme btn-theme-transparent btn-icon-left" href="addcart/{{$sp->id}}"><i class="fa fa-shopping-cart"></i>Thêm vào giỏ</a>
                                     </div>
                                 </div>
                             </div>
@@ -203,7 +197,7 @@
                                 @endif
                             </div>
                             <div class="buttons">
-                                <a class="btn btn-theme btn-theme-transparent" href="#">Thêm vào giỏ</a>
+                                <a class="btn btn-theme btn-theme-transparent" href="addcart/{{$sp->id}}">Thêm vào giỏ</a>
                             </div>
                         </div>
                     </div>

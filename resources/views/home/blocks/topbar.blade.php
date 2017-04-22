@@ -11,10 +11,10 @@
         <div class="top-bar-right">
             <ul class="list-inline">
                 <li class="hidden-xs"><a href="about">About</a></li>                         
-                <li class="hidden-xs"><a href="account">My Account</a></li>
-                <li class="hidden-xs"><a href="contact">Contact</a></li>
+                <li class="hidden-xs"><a href="account">Tài khoản</a></li>
+                <li class="hidden-xs"><a href="contact">Liên hệ</a></li>
                 <li class="hidden-xs"><a href="faq">FAQ</a></li>
-                <li class="hidden-xs"><a href="cart">Shopping Cart</a></li>
+                <li class="hidden-xs"><a href="cart">Giỏ hàng</a></li>
                 
             </ul>
         </div>

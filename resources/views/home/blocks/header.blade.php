@@ -16,16 +16,7 @@
             </div>
             <!-- /Header search -->
 
-            <!-- Header shopping cart -->
-            <div class="header-cart">
-                <div class="cart-wrapper">
-                    <a href="#" class="btn btn-theme-transparent" data-toggle="modal" data-target="#popup-cart"><i class="fa fa-shopping-cart"></i> <span class="hidden-xs"> 0 item(s) - $0.00 </span> <i class="fa fa-angle-down"></i></a>
-                    <!-- Mobile menu toggle button -->
-                    <a href="#" class="menu-toggle btn btn-theme-transparent"><i class="fa fa-bars"></i></a>
-                    <!-- /Mobile menu toggle button -->
-                </div>
-            </div>
-            <!-- Header shopping cart -->
+            
 
         </div>
     </div>

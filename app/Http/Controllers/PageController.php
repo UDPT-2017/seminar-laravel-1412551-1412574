@@ -1,13 +1,14 @@
 <?php
 
 namespace App\Http\Controllers;
+use Cart,Request;
 
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 
-use Illuminate\Http\Request;
+
 use App\LoaiSP;
 use App\HangSP;
 use App\SanPham;
@@ -17,7 +18,7 @@ class PageController extends Controller
 	function __construct()
 	{
 		$loaisp = LoaiSP::all();
-		view()->share('loaisp',$loaisp);
+		view()->share('loaisp', $loaisp);
 	}
 
     public function getHome()
@@ -51,7 +52,9 @@ class PageController extends Controller
 
     public function getCart()
     {
-    	return view('home.page.cart');
+        $total = Cart::subtotal();
+        $giohang = Cart::content();
+    	return view('home.page.cart',['total' => $total, 'giohang' => $giohang]);
     }
 
     public function getContact()
@@ -72,5 +75,29 @@ class PageController extends Controller
     	$hangsp = HangSP::find($idhangsp);
     	$sp = $hangsp->sanpham()->paginate(2);
     	return view('home.page.listproduct',['hangsp' => $hangsp,'sp' => $sp]);
+    }
+
+    public function getAddCart($idsp)
+    {
+        $sp = SanPham::find($idsp);
+        Cart::add(['id' => $sp->id, 'name' => $sp->tensp, 'qty' => 1, 'price' => ($sp->gia - $sp->gia*$sp->giamgia/100), 'options' => ['img' => $sp->urlhinh]]);
+        return redirect() -> route('shoppingcart');
+    }
+
+    public function getEditCart()
+    {
+        if(Request::ajax())
+        {
+            $id = Request::get('id');
+            $qty = Request::get('qty');
+            Cart::update($id, $qty);
+            echo "ok";
+        }
+    }
+
+    public function getDeleteCart($id)
+    {
+        Cart::remove($id);
+        return redirect()->route('shoppingcart');   
     }
 }
