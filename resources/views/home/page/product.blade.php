@@ -70,12 +70,7 @@
 
 
                     <div class="buttons">
-                        <div class="quantity">
-                            <button class="btn"><i class="fa fa-minus"></i></button>
-                            <input class="form-control qty" type="number" step="1" min="1" name="quantity" value="1" title="Qty">
-                            <button class="btn"><i class="fa fa-plus"></i></button>
-                        </div>
-                        <button class="btn btn-theme btn-cart btn-icon-left" type="submit"><i class="fa fa-shopping-cart"></i>Thêm vào giỏ hàng
+                        <a class="btn btn-theme btn-theme-transparent btn-icon-left" href="addcart/{{$sanpham->id}}"><i class="fa fa-shopping-cart"></i>Thêm vào giỏ</a>
                     </div>
 
                     <hr class="page-divider small"/>
