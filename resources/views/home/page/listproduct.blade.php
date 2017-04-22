@@ -100,7 +100,7 @@
                                             {!!$sanpham->khuyenmai!!}
                                         </div>
                                         <div class="buttons">
-                                            <a class="btn btn-theme btn-theme-transparent btn-icon-left" href="#"><i class="fa fa-shopping-cart"></i>Thêm vào giỏ</a>
+                                            <a class="btn btn-theme btn-theme-transparent btn-icon-left" href="addcart/{{$sanpham->id}}"><i class="fa fa-shopping-cart"></i>Thêm vào giỏ</a>
                                         </div>
                                     </div>
                                 </div>

@@ -11,33 +11,38 @@
             <div class="row">
                 <div class="col-sm-6">
                     <h3 class="block-title"><span>Login</span></h3>
-                    <form action="#" class="form-login">
+                    @if(count($errors)>0 )
+                        <div class="alert alert-danger">
+                            @foreach($errors->all() as $err)
+                                {{$err}} <br>
+                            @endforeach
+                        </div>
+                    @endif
+
+                    @if(session('Thanhcong'))
+                        <div class="alert alert-danger">
+                            {{session('Thanhcong')}}
+                        </div>
+                    @endif
+                    <form action="login" method="post">
+                        <input type="hidden" name="_token" value="{{csrf_token()}}">
                         <div class="row">
                             <div class="col-md-12 hello-text-wrap">
                                 <span class="hello-text text-thin">Hello, welcome to your account</span>
                             </div>
-                            <div class="col-md-12 col-lg-6">
-                                <a class="btn btn-theme btn-block btn-icon-left facebook" href="#"><i class="fa fa-facebook"></i>Sign in with Facebook</a>
-                            </div>
-                            <div class="col-md-12 col-lg-6">
-                                <a class="btn btn-theme btn-block btn-icon-left twitter" href="#"><i class="fa fa-twitter"></i>Sign in with Twitter</a>
+                            <div class="col-md-12">
+                                <div class="form-group"><input class="form-control" type="email" placeholder="email" name="email"></div>
                             </div>
                             <div class="col-md-12">
-                                <div class="form-group"><input class="form-control" type="text" placeholder="User name or email"></div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="form-group"><input class="form-control" type="password" placeholder="Your password"></div>
+                                <div class="form-group"><input class="form-control" type="password" placeholder="password" name="password"></div>
                             </div>
                             <div class="col-md-12 col-lg-6">
                                 <div class="checkbox">
                                     <label><input type="checkbox"> Remember me</label>
                                 </div>
                             </div>
-                            <div class="col-md-12 col-lg-6 text-right-lg">
-                                <a class="forgot-password" href="#">forgot password?</a>
-                            </div>
                             <div class="col-md-6">
-                                <a class="btn btn-theme btn-block btn-theme-dark" href="#">Login</a>
+                                <button type="submit" class="btn btn-block btn-theme btn-theme bt-darkn-create">Login</button>
                             </div>
                         </div>
                     </form>
@@ -60,7 +65,7 @@
                                 </ul>
                             </div>
                             <div class="col-md-6">
-                                <a class="btn btn-block btn-theme btn-theme-dark btn-create" href="#">Create Account</a>
+                                <a class="btn btn-block btn-theme btn-theme bt-darkn-create" href="signup">Create Account</a>
                             </div>
                         </div>
                     </form>
@@ -68,49 +73,7 @@
             </div>
         </div>
     </section>
-    <!-- /PAGE -->
-
-    <!-- PAGE -->
-    <section class="page-section">
-        <div class="container">
-            <div class="row blocks shop-info-banners">
-                <div class="col-md-4">
-                    <div class="block">
-                        <div class="media">
-                            <div class="pull-right"><i class="fa fa-gift"></i></div>
-                            <div class="media-body">
-                                <h4 class="media-heading">Buy 1 Get 1</h4>
-                                Proin dictum elementum velit. Fusce euismod consequat ante.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="block">
-                        <div class="media">
-                            <div class="pull-right"><i class="fa fa-comments"></i></div>
-                            <div class="media-body">
-                                <h4 class="media-heading">Call to Free</h4>
-                                Proin dictum elementum velit. Fusce euismod consequat ante.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="block">
-                        <div class="media">
-                            <div class="pull-right"><i class="fa fa-trophy"></i></div>
-                            <div class="media-body">
-                                <h4 class="media-heading">Money Back!</h4>
-                                Proin dictum elementum velit. Fusce euismod consequat ante.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- /PAGE -->
+    
 
 </div>
 <!-- /CONTENT AREA -->

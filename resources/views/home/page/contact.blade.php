@@ -12,8 +12,7 @@
                 <h1>Contact</h1>
             </div>
             <ul class="breadcrumb">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Shop</a></li>
+                <li><a href="home">Home</a></li>
                 <li class="active">Contact Us</li>
             </ul>
         </div>

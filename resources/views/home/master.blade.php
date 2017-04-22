@@ -100,6 +100,7 @@
         <!--[if (gte IE 9)|!(IE)]><!-->
         <script src="assets/plugins/jquery.cookie.js"></script>
         <script src="assets/js/theme-config.js"></script>
+        <script src="assets/js/myscript.js"></script>
         <!--<![endif]-->
 
     </body>
