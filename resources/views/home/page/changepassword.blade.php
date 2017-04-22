@@ -11,7 +11,7 @@
                 <div class="col-lg-9 col-md-9 col-sm-8">
                     <div class="information-title">Your Account Information</div>
                     <div class="details-wrap">
-                        <div class="block-title alt"> <i class="fa fa-angle-down"></i> Change Your Personal Details</div>
+                        <div class="block-title alt"> <i class="fa fa-angle-down"></i> Change Your Password</div>
                         <div class="details-box">
                             @if(count($errors)>0 )
                                 <div class="alert alert-danger">
@@ -26,14 +26,14 @@
                                     {{session('Thanhcong')}}
                                 </div>
                             @endif
-                            <form class="form-delivery" action="account" method="post">
+                            <form class="form-delivery" action="changepassword" method="post">
                              <input type="hidden" name="_token" value="{{csrf_token()}}">
                                 <div class="row">
                                     <div class="col-md-6 col-sm-6">
-                                        <div class="form-group"><input required type="text" placeholder="Username" class="form-control" name="name" aria-describedby="basic-addon1" value="{{$nguoidung->name}}"></div>
+                                        <div class="form-group"><input required type="password" placeholder="Password" class="form-control" name="password"></div>
                                     </div>                                                                                                 
                                     <div class="col-md-6 col-sm-6">
-                                        <div class="form-group"><input required type="email" placeholder="Email" class="form-control" name="email" aria-describedby="basic-addon1" value="{{$nguoidung->email}}"></div>
+                                        <div class="form-group"><input required type="password" placeholder="Passwordconfirm" class="form-control" name="passwordconfirm"></div>
                                     </div>
                                     <div class="col-md-12 col-sm-12">
                                         <button class="btn btn-theme btn-theme-dark" type="submit"> Update </button>
@@ -50,7 +50,7 @@
                     <div class="widget account-details">
                         <h2 class="widget-title">Account</h2>
                         <ul>                                       
-                            <li><a href="changepassword">Change Password</a></li>
+                            <li><a href="account">My Account</a></li>
                         </ul>
                     </div>
                 </div>
@@ -61,5 +61,4 @@
     </section>
 </div>
 <!-- /CONTENT AREA -->
-
 @endsection
