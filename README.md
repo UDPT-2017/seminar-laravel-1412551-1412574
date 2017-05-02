@@ -3,10 +3,10 @@
 **Tên đề tài** là một repository trong đề tài tìm hiểu của lớp Ứng dụng phân tán.
 
 Thành viên:
-* [ ] **1412551** Nguyễn Đang Tích (ndtich)
-* [ ] **1412574** Đặng Văn Trí (VanTri250596)
+* [x] **1412551** Nguyễn Đang Tích (ndtich)
+* [x] **1412574** Đặng Văn Trí (VanTri250596)
 
-URL: **Link github page**
+URL: **https://ndtich.github.io/**
 
 ## Yêu cầu
 
@@ -19,9 +19,9 @@ Yêu cầu **GIT**
 * [ ] Sử dụng GIT theo Gitflow Workflow.
 
 Yêu cầu **bắt buộc**
-* [ ] Source code demo
-* [ ] Slide thuyết trình
-* [ ] Tạo github page để viết lại báo cáo cho nội dung đề tài tìm hiểu
+* [x] Source code demo
+* [x] Slide thuyết trình
+* [x] Tạo github page để viết lại báo cáo cho nội dung đề tài tìm hiểu
 
 Các **nội dung lý thuyết** dự định tìm hiểu. Nhóm liệt kê các nội dung đã làm được vào bên dưới và check vào các nội dung đã tìm hiểu được.
 * [x] Route
@@ -39,11 +39,13 @@ Các **chức năng của demo** đã thực hiện hoặc dự kiến thực hi
 * [x] Web bán hàng (điện thoại) gồm các trang home, list product, product, search, login, shopping cart, about, contact,...
 * [x] Khi vào trang chủ sẽ hiển thị các sản phẩm hot, mới, khuyến mãi (1412551)
 * [x] Hiển thị trang danh sách sản phẩm theo loại sản phẩm và hiển thị trang thông tin chi tiết sản phẩm (1412551)
-* [x] Đăng nhập, đăng xuất tài khoản (1412574)
-* [x] Đăng kí tài khoản mới bằng tài khoản email (1412574)
 * [x] Khi bấm vào thêm thì sẽ thêm sản phẩm vào giỏ và đi đến trang shopping cart (1412551)
 * [x] Giỏ hàng có thể thêm, cập nhật hoặc xóa 1 sản phẩm (1412551)
 * [x] Tìm kiếm sản phẩm có phân trang (1412551)
+* [x] Đăng nhập, đăng xuất tài khoản (1412574)
+* [x] Đăng kí tài khoản mới bằng tài khoản email (1412574)
+* [x] Thay đổi thông tin tài khoản (mật khẩu, tên) (1412574)
+
 
 ## Demo
 
