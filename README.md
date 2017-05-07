@@ -6,7 +6,7 @@ Thành viên:
 * [x] **1412551** Nguyễn Đang Tích (ndtich)
 * [x] **1412574** Đặng Văn Trí (VanTri250596)
 
-URL: **https://ndtich.github.io/**
+URL: **https://udpt-2017.github.io/seminar-laravel-1412551-1412574/**
 
 ## Yêu cầu
 
